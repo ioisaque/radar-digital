@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en-EN" prefix="og: http://ogp.me/ns#" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1">
+    <title>bluedot. documentation</title>
+    <meta name="description" content="bluedot. documentation" />
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700" rel="stylesheet">
+
+    <!-- CSS -->
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap-grid.min.css">
+    
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header class="container">
+        <div class="row">
+            <!-- Logo -->
+            <div class="col-sm-5">
+                <p class="site-title">
+                    <a href="#"><img src="assets/bluedot-logo.svg" alt="Bluedot dot" class="logo"><img src="assets/bluedot-text.svg" alt="bluedot." class="logo-text"></a>
+                </p>
+            </div>
+            <!-- END Logo -->
+
+            <!-- Navigation bar -->
+            <div class="col-sm-7">
+                <nav id="navigation">
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#treefile">Tree file</a></li>
+                        <li><a href="#structure">Structure</a></li>
+                        <li><a href="#changelog">Changelog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- END Navigation bar -->
+
+        <!-- Mobile navigation bar -->
+        <div class="mobile-nav">
+
+            <button class="mobile-menu-btn" onclick="openNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="overlay" id="overlay-nav">
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <nav id="mobile-navigation">
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#treefile">Tree file</a></li>
+                        <li><a href="#structure">Structure</a></li>
+                        <li><a href="#changelog">Changelog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- END Mobile navigation bar -->
+
+    </header>
+
+    <!-- Main container -->
+    <main>
+        <div class="documentation-title">
+            <h1>Documentation</h1>
+            <p>You will find here what you need to know about bluedot. minimal portfolio HTML template.</p>
+        </div>
+        <!-- Documentation main section -->
+        <section id="documentation-container" class="container">
+            <div class="documentation-description">
+                <h2 id="features">Features</h2>
+                <h3>Check out some of the features we have in this template.</h3>
+                <ul>
+                    <li>Fully responsive</li>
+                    <li>Minimal portfolio, easy to use and easy to customize</li>
+                    <li>Clear design</li>
+                    <li>Clean code well organised, commented</li>
+                    <li>Template well structured (header, main, footer...)</li>
+                    <li>Powered with Bootstrap V4 grid</li>
+                    <li>SASS files included</li>
+                    <li>Smooth animation</li>
+                    <li>Google Fonts</li>
+                </ul>
+                <img class="work-main-image" src="assets/bluedot-mockeup.png" width="557" height="438" alt="bluedot. mockup">
+            </div>
+            <div class="documentation-description row">
+                <div class="col-md-12">
+                    <h2 id="treefile">Tree file</h2>
+                    <h3>assets</h3>
+                    <p>The place to put your logo, favicon, icon and template images</p>
+                    <h3>css</h3>
+                    <p>All css files, included bootstrap</p>
+                    <h3>docs</h3>
+                    <p>This documentation</p>
+                    <h3>images</h3>
+                    <p>Your projects images</p>
+                    <h3>js</h3>
+                    <p>Custom script in bluedot.js and required JS</p>
+                    <h3>src</h3>
+                    <p>Source .scss (SASS)</p>
+                    <h3>/</h3>
+                    <p>Templates HTML files (structured with PHP)</p>
+                </div>
+            </div>
+            <div class="documentation-description row">
+                <div class="col-md-12">
+                    <h2 id="structure">HTML Structure</h2>
+                    <h3>Index structure</h3>
+                </div>
+                <div class="item-first img-description col-md-12">
+                    <img src="assets/html-structure.jpg" width="785" height="629" alt="HTML Structure">
+                </div>
+            </div>
+            <div class="documentation-description row">
+                <div class="col-md-12">
+                    <h2 id="changelog">Changelog</h2>
+                    <h3>Version 1.0 - October 10, 2017</h3>
+                    <p>Initial release of the bluedot. template.</p>
+                </div>
+            </div>
+        </section>
+        <!-- END Documentation main section -->
+
+    </main>
+
+    <!-- Site footer -->
+    <footer id="footer">
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <span>ykaydesign - Copyright 2017</span>
+        </div>
+        <!-- END Copyright -->
+
+    </footer>
+    <!-- END Site Footer -->
+
+    <script>
+        //MOBILE MENU
+        //Open mobile menu
+        function openNav() {
+            document.getElementById("overlay-nav").style.height = "100%";
+        }
+
+        // Close mobile menu
+        function closeNav() {
+            document.getElementById("overlay-nav").style.height = "0%";
+        }
+
+        $('#overlay-nav').on('click', function() {
+            document.getElementById("overlay-nav").style.height = "0%";
+        });
+        //END MOBILE MENU
+    </script>
+
+</body>
